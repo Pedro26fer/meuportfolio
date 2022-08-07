@@ -37,7 +37,7 @@ export const Home = (): JSX.Element => {
             <Text type="body1" color="grey6">
               Sou estudante de programação na Kenzie Academy Brasil, participei
               de diversos projetos resolvendo problemas de alto nível e
-              desenvolvendo habilidades
+              desenvolvendo habilidades de Front-end e Back-end também
             </Text>
             <HeaderButtonsArea>
               <Button as="a" href="#projetos">

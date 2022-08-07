@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "@stitches/react": "^1.2.8",
-    "react": "^18.0.0",
+    "jsx-runtime": "^1.2.0",
+    "react": "^18.2.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.4.0",
     "use-media": "^1.4.0"

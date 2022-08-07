@@ -1,5 +1,5 @@
 import { useState } from "react";
-import useMedia from "use-media";
+import useMedia from 'use-media';
 import { userData } from "@/utils/userData";
 
 import {
@@ -11,7 +11,7 @@ import {
   NavbarMobileArea,
 } from "./style";
 
-import { FaGithub, FaLinkedinIn, FaBars } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaBars } from 'react-icons/fa';
 import { IoClose } from "react-icons/io5";
 import { Button } from "@/styles/Buttons";
 import { Container } from "@/styles/Global";
@@ -34,31 +34,31 @@ export const NavBar = (): JSX.Element => {
 
   return (
     <NavbarWrapper>
-      <Container>
-        <NavbarMobileArea>
-          <LogoTipo>
-            <LogoTipoImage
-              src={`https://github.com/${userData.githubUser}.png`}
-              alt={userData.nameUser}
-              title={userData.nameUser}
-              width={"48px"}
-              height={"48px"}
-            />
-            <LogoTipoText>{userData.nameUser}</LogoTipoText>
-          </LogoTipo>
-          {isWide && (
-            <Button
-              type="icon"
-              onClick={OpenMenu}
-              aria-label={!open ? "Abrir Menu" : "Fechar Menu"}
-            >
-              {!open ? <FaBars /> : <IoClose />}
-            </Button>
-          )}
-        </NavbarMobileArea>
-        {isWide ? open && <NavLinks /> : <NavLinks />}
-      </Container>
-    </NavbarWrapper>
+    <Container>
+      <NavbarMobileArea>
+        <LogoTipo>
+          <LogoTipoImage
+            src={`https://github.com/${userData.githubUser}.png`}
+            alt={userData.nameUser}
+            title={userData.nameUser}
+            width={"48px"}
+            height={"48px"}
+          />
+          <LogoTipoText>{userData.nameUser}</LogoTipoText>
+        </LogoTipo>
+        {isWide && (
+          <Button
+            type="icon"
+            onClick={OpenMenu}
+            aria-label={!open ? "Abrir Menu" : "Fechar Menu"}
+          >
+            {!open ? <FaBars /> : <IoClose />}
+          </Button>
+        )}
+      </NavbarMobileArea>
+      {isWide ? open && <NavLinks /> : <NavLinks />}
+    </Container>
+  </NavbarWrapper>
   );
 };
 
