@@ -5,6 +5,7 @@ import imgNode from "../public/static/img/stack/node.svg";
 import imgStyled from "../public/static/img/stack/styled.svg";
 import imgReact from "../public/static/img/stack/react.svg";
 import { SiPostgresql } from "react-icons/si";
+import {FaDocker} from 'react-icons/fa'
 
 export const stackData = [
   {
@@ -31,5 +32,12 @@ export const stackData = [
     title: "React",
     img: imgReact,
   },
-  { title: "Postgree.sql", img: SiPostgresql },
+  { 
+    title: "Postgree.sql", 
+    img: SiPostgresql 
+  },
+  {
+    title: "Docker",
+    img: FaDocker
+  }
 ];
